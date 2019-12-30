@@ -1,0 +1,37 @@
+create or replace procedure welcome(name IN varchar2)
+as
+BEGIN
+   DBMS_OUTPUT.PUT_LINE('welcome'|| name);
+END;
+execute welcome(janki);
+
+declare
+	
+	fac number:=1;
+	i number:=0;
+
+PROCEDURE fact7(n in number)
+is
+begin
+	
+ 
+	for i in 1..n
+	loop
+		fac:=fac*i;
+                dbms_output.put_line('factorial='||fac);
+	end loop;
+ 
+	dbms_output.put_line('factorial='||fac);
+end;
+
+begin
+
+fact7(4);
+
+end;
+
+(
+    ->   IN EMP NO    varchar(30),
+    ->   IN s_dob     date, 
+    ->   IN s_address varchar(100)
+    -> )
