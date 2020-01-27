@@ -1,0 +1,24 @@
+<html>
+<body>
+	<p id="demo"></p>
+<script>
+var xmlhttp = new XMLHttpRequest(); 
+   
+xmlhttp.onreadystatechange = function() { 
+    if (this.readyState == 4 && this.status == 200) { 
+        myObj = JSON.parse(this.responseText); 
+        document.getElementById("demo").innerHTML = myObj.name; 
+        //document.getElementById("name").innerHTML = myObj.name; 
+        //document.getElementById("college").innerHTML = myObj.college; 
+        //document.getElementById("gender").innerHTML = myObj.gender; 
+        //document.getElementById("age").innerHTML = myObj.age; 
+    } 
+}; 
+xmlhttp.open("GET", "jsondemo.txt", true); 
+xmlhttp.send(); 
+
+
+</script>
+<p>click <a href="jsondemo.txt" target= "blank">jsondemo.txt</a></p>
+</body>
+</html>
