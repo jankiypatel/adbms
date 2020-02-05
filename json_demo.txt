@@ -1,0 +1,8 @@
+{
+	"F_NAME":"KHANTIL",
+	"L_NAME":"PATEL",
+	"AGE":20,
+	"MARKS":[
+		{"OOSD":23},{"CC":29},{"AJ":30},{"ADBMS":27},{"DM":23}
+	]
+}
